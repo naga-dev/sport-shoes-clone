@@ -1,0 +1,66 @@
+// App font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  // height: 10000px;
+}
+
+// reset
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+// Helpers
+@import "./helpers/customeClasses.scss";
+@import "./helpers/variables.scss";
+@import "./helpers/mixin.scss";
+
+// import app components
+@import "./components/BlackFriday.scss";
+@import "./components/Header.scss";
+@import "./components/Navigation.scss";
+@import "./components/MobileNav.scss";
+@import "./components/SideMenu.scss";
+@import "./components/Slider.scss";
+@import "./components/HomePageBanner.scss";
+@import "./components/FeaturesProducts.scss";
+@import "./components/SingleProduct.scss";
+@import "./components/BestSelling.scss";
+@import "./components/LatestNews.scss";
+@import "./components/SayAboutUs.scss";
+@import "./components/AppFooter.scss";
+@import "./components/AppPageBanner.scss";
+@import "./components/OurBrands.scss";
+@import "./components/ProductModal.scss";
+
+// App pages
+@import "./pages/HomePage.scss";
+@import "./pages/AboutPage.scss";
+@import "./pages/UserAccount.scss";
+@import "./pages/UserCreateAccount.scss";
+@import "./pages/ShopPage.scss";
+@import "./pages/BlogPage.scss";
+@import "./pages/ProductView.scss";
+@import "./pages/ContactPage.scss";
+@import "./pages/CartPage.scss";
+@import "./pages/CheckoutPage.scss";
+
+// React router dom active link style
+.active-link {
+  color: $boldRed !important;
+}

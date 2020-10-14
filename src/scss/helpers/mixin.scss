@@ -1,0 +1,95 @@
+// Margin mixin
+$maxNum: 100;
+
+@for $i from 1 through $maxNum {
+  .mr-#{$i} {
+    margin: $i + px;
+  }
+}
+
+// Margin top
+@for $i from 1 through $maxNum {
+  .mr-top-#{$i} {
+    margin-top: $i + px;
+  }
+}
+
+// Margin right
+@for $i from 1 through $maxNum {
+  .mr-right-#{$i} {
+    margin-right: $i + px;
+  }
+}
+
+// Margin bottom
+@for $i from 1 through $maxNum {
+  .mr-bottom-#{$i} {
+    margin-bottom: $i + px;
+  }
+}
+
+// Margin left
+@for $i from 1 through $maxNum {
+  .mr-left-#{$i} {
+    margin-left: $i + px;
+  }
+}
+
+// Margin mixin
+$maxNum: 100;
+
+@for $i from 1 through $maxNum {
+  .pd-#{$i} {
+    padding: $i + px;
+  }
+}
+
+// Margin top
+@for $i from 1 through $maxNum {
+  .pd-top-#{$i} {
+    padding-top: $i + px;
+  }
+}
+
+// Margin right
+@for $i from 1 through $maxNum {
+  .pd-right-#{$i} {
+    padding-right: $i + px;
+  }
+}
+
+// Margin bottom
+@for $i from 1 through $maxNum {
+  .pd-bottom-#{$i} {
+    padding-bottom: $i + px;
+  }
+}
+
+// Margin left
+@for $i from 1 through $maxNum {
+  .pd-left-#{$i} {
+    padding-left: $i + px;
+  }
+}
+
+//  Mixins
+@mixin customeBtn($padding, $width, $bg, $color) {
+  padding: $padding;
+  width: $width;
+  background-color: $bg;
+  color: $color;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+}
+
+@mixin offer($padding, $bg, $color, $width, $fSize) {
+  padding: $padding;
+  background-color: $bg;
+  color: $color;
+  width: $width;
+  font-size: $fSize;
+  text-align: center;
+}
